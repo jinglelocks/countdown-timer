@@ -19,9 +19,9 @@ function updateCountdown() {
   console.log(d,h,m,s);
 
   days.innerHTML = d;
-  hours.innerHTML = h;
-  minutes.innerHTML = m;
-  seconds.innerHTML = s;
+  hours.innerHTML = h < 10 ? '0' + h : h;
+  minutes.innerHTML = m < 10 ? '0' + m : m;
+  seconds.innerHTML = s < 10 ? '0' + s : s;
 };
 
 // Refresh
